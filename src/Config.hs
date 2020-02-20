@@ -15,14 +15,14 @@ newtype Config = Config
     } deriving (Show)
 
 getCommentString :: String -> Config -> Maybe String
-getCommentString lang 
+getCommentString lang
     = fmap languageLineComment
     . find ((== lang) . languageName)
     . configLanguages
 
 lookupLanguage :: String -> Config -> Maybe Language
 lookupLanguage x cfg
-    = find (elem x . languageAbbreviations) 
+    = find (elem x . languageAbbreviations)
     $ configLanguages cfg
 
 languageFromName :: String -> Config -> Maybe Language
@@ -36,6 +36,9 @@ languageFromName x cfg
 defaultLanguages =
     [ Language "C++"         ["cpp", "c++"]               "// ------" ""
     , Language "C"           ["c"]                        "// ------" ""
+    , Language "Go"          ["go"]                       "// ------" ""
+    , Language "Zig"         ["zig"]                      "// ------" ""
+    , Language "Forth"       ["forth"]                    "\\ ------" ""
     , Language "D"           ["d"]                        "// ------" ""
     , Language "Rust"        ["rust"]                     "// ------" ""
     , Language "Haskell"     ["hs", "haskell"]            "-- ------" ""
