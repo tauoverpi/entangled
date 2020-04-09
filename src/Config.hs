@@ -44,7 +44,7 @@ defaultLanguages =
     , Language "Haskell"     ["hs", "haskell"]            "-- ------" ""
     , Language "Python"      ["py", "python", "python3"]  "## ------" ""
     , Language "Julia"       ["jl", "julia"]              "## ------" ""
-    , Language "Shell"       ["sh"]                       "## ------" ""
+    , Language "Bash"        ["sh", "bash"]               "## ------" ""
     , Language "JavaScript"  ["js", "javascript", "ecma"] "// ------" ""
     , Language "TypeScript"  ["ts", "typescript"]         "// ------" ""
     , Language "Haxe"        ["hx", "haxe"]               "// ------" ""
