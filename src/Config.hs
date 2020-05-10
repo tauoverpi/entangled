@@ -55,6 +55,7 @@ defaultLanguages =
     , Language "Gnuplot"     ["gnuplot"]                  "## ------" ""
     , Language "Make"        ["make", "makefile"]         "## ------" ""
     , Language "Elm"         ["elm"]                      "-- ------" ""
+    , Language "Prolog"      ["pl", "prolog"]             "%% ------" ""
     , Language "HTML"        ["html"]                     "<!-- ----" " -->"
     , Language "XML"         ["xml"]                      "<!-- ----" " -->"
     , Language "CSS"         ["css"]                      "/* ------" " */"
